@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vant.Ai - Configurar Estratégia</title>
+    <link rel="shortcut icon" href="imagens/new.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="dashboard.html">
+            <img src="imagens/ventaiAtivo 3.png" alt="Vant.Ai" width="120">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="lista-leads.html">Voltar para Leads</a></li>
+                <li><a href="login.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="text-center">
+            <h2>Configurar Playbook Personalizado</h2>
+            <p>Você selecionou um lead. Agora, defina a estratégia de abordagem:</p>
+        </section>
+
+        <div class="form-card" style="max-width:580px">
+            <form action="resultado-final.html" method="GET">
+                <fieldset>
+                    <legend><strong>1. Qual framework de vendas utilizar?</strong></legend>
+                    <div class="radio-option">
+                        <input type="radio" id="bant" name="metodo" value="BANT" checked>
+                        <label for="bant"><strong>BANT</strong> — Foco em Orçamento e Autoridade</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="spin" name="metodo" value="SPIN">
+                        <label for="spin"><strong>SPIN Selling</strong> — Foco em Investigação de Problemas</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend><strong>2. Qual o objetivo do contato?</strong></legend>
+                    <div class="form-group">
+                        <select name="objetivo" required>
+                            <option value="">Selecione um objetivo...</option>
+                            <option value="prospeccao">Primeira abordagem (Cold Call/E-mail)</option>
+                            <option value="reuniao">Agendar reunião de demonstração</option>
+                            <option value="fechamento">Quebra de objeções e fechamento</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend><strong>3. Observações Adicionais (Opcional)</strong></legend>
+                    <div class="form-group">
+                        <label for="obs">Algum detalhe específico sobre este lead?</label>
+                        <textarea id="obs" name="obs" rows="4" placeholder="Ex: O cliente está usando o concorrente X..."></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Gerar Playbook Agora</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vant.Ai - Sistema de Inteligência Comercial</p>
+    </footer>
+
+</body>
+</html>

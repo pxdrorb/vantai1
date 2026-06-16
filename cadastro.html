@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vant.Ai - Cadastro de Vendedor</title>
+    <link rel="shortcut icon" href="imagens/new.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="imagens/ventaiAtivo 3.png" alt="Vant.Ai" width="120">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="login.html">Já tem conta? Faça login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="text-center">
+            <h2>Crie sua Conta na Vant.Ai</h2>
+            <p>Preencha os dados abaixo para começar a prospectar leads e gerar seus playbooks táticos.</p>
+        </section>
+
+        <div class="form-card">
+            <form action="login.html" method="GET">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail corporativo ou acadêmico</label>
+                    <input type="email" id="email" name="email" required placeholder="exemplo@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone / WhatsApp</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="(81) 90000-0000">
+                </div>
+
+                <div class="form-group">
+                    <label for="empresa">Sua Empresa ou Projeto (Opcional)</label>
+                    <input type="text" id="empresa" name="empresa" placeholder="Ex: Soluções Agrícolas">
+                </div>
+
+                <div class="form-group">
+                    <label for="senha">Crie uma Senha</label>
+                    <input type="password" id="senha" name="senha" required minlength="6">
+                    <small>A senha deve ter pelo menos 6 caracteres.</small>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" style="width:100%">Finalizar Cadastro</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vant.Ai - Sistema de Inteligência Comercial</p>
+    </footer>
+
+</body>
+</html>

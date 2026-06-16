@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vant.Ai - Gerador de Leads</title>
+    <link rel="shortcut icon" href="imagens/new.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="dashboard.html">
+            <img src="imagens/ventaiAtivo 3.png" alt="Vant.Ai" width="120">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><strong>Gerador de Leads</strong></li>
+                <li><a href="login.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Explorar Novos Leads</h2>
+            <p>Com base no seu perfil de vendedor, identificamos estas empresas e pessoas com alto potencial de compra:</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome / Empresa</th>
+                            <th>Setor</th>
+                            <th>Localização</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>AgroTech Soluções</strong>
+                                <small>Contato: Ricardo Souza (Diretor)</small>
+                            </td>
+                            <td>Agronegócio</td>
+                            <td>Petrolina, PE</td>
+                            <td>
+                                <a href="configurar-playbook.html?lead=agrotech" class="btn btn-primary btn-sm">Gerar Playbook</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Marina Silva</strong>
+                                <small>Proprietária da Boutique Sol</small>
+                            </td>
+                            <td>Varejo / Moda</td>
+                            <td>Recife, PE</td>
+                            <td>
+                                <a href="configurar-playbook.html?lead=marina" class="btn btn-primary btn-sm">Gerar Playbook</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Construtora Nordeste</strong>
+                                <small>Contato: Ana Paula (Compras)</small>
+                            </td>
+                            <td>Construção Civil</td>
+                            <td>Jaboatão, PE</td>
+                            <td>
+                                <a href="configurar-playbook.html?lead=construtora" class="btn btn-primary btn-sm">Gerar Playbook</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h3>Filtros de Busca</h3>
+            <form class="filter-bar">
+                <label for="setor">Filtrar por Setor:</label>
+                <select id="setor" name="setor">
+                    <option value="todos">Todos os setores</option>
+                    <option value="agro">Agronegócio</option>
+                    <option value="tech">Tecnologia</option>
+                    <option value="varejo">Varejo</option>
+                </select>
+                <button type="button" class="btn btn-outline btn-sm">Atualizar Lista</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vant.Ai - Sistema de Inteligência Comercial</p>
+    </footer>
+
+</body>
+</html>
